@@ -1,0 +1,36 @@
+.root{
+	font-size: 20em;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.inputform h1 {
+	padding: 2%;
+	margin: 1%;
+  	background-color: lightblue;
+}
+#myselect{
+	margin: 1%;
+}	
+span{
+	text-align: left;
+}
+
+
+.output{
+	display: none;
+	margin-top: 5vh;
+}
+@media screen and (max-width: 415px){
+	#poster{
+		width: 10vw; 
+		height: 15vh;
+	}
+	#title{
+		font-size: 1rem;
+	}
+	.inputform h1{
+		font-size: 2rem;
+	}
+}

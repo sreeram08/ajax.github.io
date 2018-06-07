@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="ODBM.css">
+	<title>OMDB-find about movies</title>
+</head>
+
+
+
+
+<body>
+	<div class="container">
+		<div class="inputform">
+			<h1>OMDB-search for your favorite movie here</h1>
+				<div id="typeselector">
+	<select id="myselect">
+            <option value="1">By Title</option>
+            <option value="2">By Id</option>
+            <option value="3">By Year</option>
+        </select>
+  </div>
+</div>
+
+
+
+
+
+
+  	<!-- search box -->
+
+  	<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id=" inputGroup-sizing-sm">Search</span>
+  </div>
+  <input type="text" id="searchbox" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="btn">
+  <button id="searchbtn">Search</button>
+</div>
+
+
+	<!-- To display movie details -->
+  <div class="container" style="background: lightblue;">
+<div class="output">
+	  <div class="card" style="padding: 2%; background: black; color: white; flex-direction: row;">
+    <img id="poster" class="card-img" style="width: 37vw; height: 60vh;" src="" alt="dummy.png">
+    <div class="info" style="margin: 1%; ">
+    <h1 id="title"></h1>
+    <h6 id="year"></h6>
+    <h6 id="rated"></h6>
+    <h6 id="language"></h6>
+    <h6 id="IMDB id"></h6>
+    </div>
+    
+  </div>
+  <div class="card p-3 text-left">
+    <blockquote class="blockquote mb-0">
+      <div class="details">
+      	<span><h4><u>Details</u></h4></span>
+      
+      	<h6 id="release-date"></h6>
+      	<h6 id="genre"></h6>
+      	<h6 id="runtime"></h6>
+      	<span><h4><u>Cast&Crew</u></h4></span>
+      	<h6 id="director"></h6>
+      	<h6 id="writers"></h6>
+      	<h6 id="actors"></h6>
+      	<span><h4><u>Plot</u></h4></span>
+      	<div id="plot"></div>
+      </div>
+      <!-- <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer> -->
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title"><u>Movie Ratings</u></h4>
+      <div id="metascore"></div>
+      <div id="imdbRating"></div>
+      <div id="imdbVotes"></div>
+      <div id="collections"></div>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+
+<script src="jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript" src="ODBM.js"></script> 
+
+</html>
