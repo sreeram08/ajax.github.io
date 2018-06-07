@@ -30,7 +30,7 @@ $(document).ready(()=>{
         type: 'GET',
         dataType: 'json',
         async: true,
-        url: 'http://www.omdbapi.com/?'+token+'&apikey=1dd65742',
+        url: 'https://www.omdbapi.com/?'+token+'&apikey=1dd65742',
         success: (response) => {
             console.log(response);
 
